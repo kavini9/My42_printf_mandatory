@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 20:58:42 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/18 17:29:42 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/29 17:31:17 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ static void	ft_cspdiuxx(const char *spec, va_list args, int *totlen)
 		ft_putnbr_u(va_arg(args, unsigned int), ft_base(HEX_U), totlen);
 	else if (*spec == '%')
 		ft_putchar('%', totlen);
+	else
+		ft_putchar(*spec, totlen);
 }
 
 int	ft_printf(const char *format, ...)
@@ -55,9 +57,10 @@ int	ft_printf(const char *format, ...)
 	{
 		if (*format == '%' && format++ && *format)
 			ft_cspdiuxx(format, args, &totlen);
-		else
+		else if (*format)
 			ft_putchar(*format, &totlen);
-		format++;
+		if (*format)
+			format++;
 	}
 	va_end(args);
 	return (totlen);

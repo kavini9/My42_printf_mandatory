@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 13:41:35 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/18 17:38:49 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/27 14:53:28 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -16,8 +16,6 @@
 # define HEX_U "0123456789ABCDEF"
 # include <stdarg.h>
 # include <unistd.h>
-//# include <stdint.h>
-//# include <limits.h>
 
 typedef struct s_base
 {

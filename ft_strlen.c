@@ -6,11 +6,9 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:28:25 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/17 22:00:25 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/29 18:40:47 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "ft_printf.h"
 
 int	ft_strlen(const char *s)
 {
